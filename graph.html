@@ -3,16 +3,12 @@
 <title>V-I GRAPH</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <body>
-  <button class="button" style="background-color:black;color: aliceblue;"
-      onclick="location.href='graph.html'">
-      <b>RESTART</b>
-      </button>
-<canvas id="myChart" width="1100" height="525"></canvas>
+<canvas id="myChart" width="525" height="525"></canvas>
 <script>
 var xValues = [];
 var yValues = [];
 var r;
-r=prompt("Please enter the value of resistor for getting a proper graph");
+r=5;
 generateData("x * r", 1, 50, 1);
 new Chart("myChart", {
   type: "line",
